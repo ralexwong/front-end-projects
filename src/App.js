@@ -7,7 +7,6 @@ import home from './Home'
 
 import StarRating from './projects/StarRating'
 
-
 function App() {
   return (
     <Router history={history}>
