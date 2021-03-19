@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: inline;
+    margin: 0;
+}
+
+.accordian {
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 4px;    
+
+    &__title, &__caption {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        border-bottom: 1px solid grey;
+    }
+
+    &__caption {
+        max-height: 0;
+        overflow: hidden;
+        animation: slideback ease 1s backwards;
+    }
+
+    &__caption--open {
+        max-height: 100px;
+        animation: slide ease 1s forwards;
+    }
+
+    &__button {
+        transition: 1s;
+    }
+
+    &__button--open {
+        transition: 1s;
+        transform: rotate(180deg);
+    }
+
+    @keyframes slide {
+        from {max-height: 0;}
+        to {max-height: 100px;}
+      }
+
+    @keyframes slideback {
+    from {max-height: 100px;}
+    to {max-height: 0;}
+    }
+
+
+}

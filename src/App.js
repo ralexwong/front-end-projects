@@ -6,6 +6,8 @@ import NoMatch from './NoMatch'
 import home from './Home'
 
 import StarRating from './projects/StarRating'
+import Accordian from './projects/Accordian'
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={home} />
           <Route exact path="/star-rating" component={StarRating} />
+          <Route exact path="/accordian" component={Accordian} />
 
           <Route component={NoMatch} />
         </Switch>

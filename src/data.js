@@ -4,6 +4,11 @@ const data = [
         image : '',
         url : '/star-rating'
     },
+    {
+        title : 'Accordian',
+        image : '',
+        url : '/accordian'
+    },
     
     
 ]
