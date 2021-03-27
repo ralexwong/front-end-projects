@@ -22,10 +22,9 @@ const Accordian = (props) => {
 
     const activate = (val) => {
         if (val === currentAccordian) {
-            setCurrentAccordian(false)
-        } else {
-            setCurrentAccordian(val)
+            return setCurrentAccordian(null)
         }
+        setCurrentAccordian(val)
     }
 
     return <div className='container'>
@@ -33,14 +32,11 @@ const Accordian = (props) => {
             {info.map((block, i) => {
                 const accordianNumber = i+1
                 return <div key={i}>
-                    <div 
-                        onClick={() => activate(accordianNumber)} 
-                        className='accordian__title'
-                    >
-                        <p>{block.title}</p> <span className={`accordian__button ${ accordianNumber === currentAccordian ? 'accordian__button--open' : '' }`}>V</span>
+                    <div onClick={() => activate(accordianNumber)} className='accordian__title'>
+                        {block.title} <span className={`accordian__button ${ accordianNumber === currentAccordian ? 'accordian__button--open' : '' }`}>V</span>
                     </div>
                     <div className={`accordian__caption ${ accordianNumber === currentAccordian ? 'accordian__caption--open' : '' }`}>
-                        <p>{block.caption}</p>
+                        {block.caption}
                     </div>
                 </div>
             })}
