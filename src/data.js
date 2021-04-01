@@ -9,6 +9,16 @@ const data = [
         image : '',
         url : '/accordian'
     },
+    {
+        title : 'Counter',
+        image : '',
+        url : '/counter'
+    },
+    {
+        title : 'Calculator',
+        image : '',
+        url : '/calculator'
+    },
     
     
 ]

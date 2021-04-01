@@ -7,6 +7,10 @@ import home from './Home'
 
 import StarRating from './projects/StarRating'
 import Accordian from './projects/Accordian'
+import Counter from './projects/Counter'
+import Calculator from './projects/Calculator'
+
+
 
 
 function App() {
@@ -17,6 +21,9 @@ function App() {
           <Route exact path="/" component={home} />
           <Route exact path="/star-rating" component={StarRating} />
           <Route exact path="/accordian" component={Accordian} />
+          <Route exact path="/counter" component={Counter} />
+          <Route exact path="/calculator" component={Calculator} />
+
 
           <Route component={NoMatch} />
         </Switch>
