@@ -19,6 +19,11 @@ const data = [
         image : '',
         url : '/calculator'
     },
+    {
+        title : 'Popover',
+        image : '',
+        url : '/popover'
+    },
     
     
 ]

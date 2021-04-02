@@ -1,0 +1,39 @@
+.popover {
+    margin-top: 30vh;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+
+    &__container {
+        position: relative;
+    }
+
+    &__box {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    &__popover {
+        position: absolute;
+        border: 1px solid black;
+        padding: 1rem;
+        height: 2rem;
+
+        &--TL {
+            top: -5rem;
+            left: -15rem;
+
+
+            &:after {
+                content: " ";
+                border-top: 11px solid #222;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                top: 111px;
+                right: -140px;
+              }
+        }
+    }
+
+}
