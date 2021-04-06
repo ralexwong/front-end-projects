@@ -7,7 +7,7 @@ const data = ['TL', 'T', 'TR', 'L', 'M', 'R', 'BL', 'B', 'BR']
 const Popover = () => {
 
 
-
+    
     return <div className='center'>
         <div className='popover'>
             {data.map((box, i) => {

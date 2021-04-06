@@ -10,6 +10,8 @@ import Accordian from './projects/Accordian'
 import Counter from './projects/Counter'
 import Calculator from './projects/Calculator'
 import Popover from './projects/Popover'
+import TicTacToe from './projects/TicTacToe'
+
 
 
 
@@ -25,6 +27,7 @@ function App() {
           <Route exact path="/counter" component={Counter} />
           <Route exact path="/calculator" component={Calculator} />
           <Route exact path="/popover" component={Popover} />
+          <Route exact path="/tictactoe" component={TicTacToe} />
 
 
 

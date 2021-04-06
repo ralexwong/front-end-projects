@@ -24,6 +24,11 @@ const data = [
         image : '',
         url : '/popover'
     },
+    {
+        title : 'TicTacToe',
+        image : '',
+        url : '/tictactoe'
+    },
     
     
 ]

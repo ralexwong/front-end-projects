@@ -7,14 +7,22 @@
 
     &__container {
         position: relative;
-    }
-
-    &__box {
         width: 10rem;
         height: 10rem;
     }
 
+    &__box {
+        height: 100%;
+
+        &:hover {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
     &__popover {
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
         border: 1px solid black;
         padding: 1rem;
@@ -24,9 +32,13 @@
             top: -5rem;
             left: -15rem;
 
+            &:hover {
+                opacity: 1;
+                visibility: visible;
+            }
 
             &:after {
-                content: " ";
+                content: "";
                 border-top: 11px solid #222;
                 border-left: 8px solid transparent;
                 border-right: 8px solid transparent;
